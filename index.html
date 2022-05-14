@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Le Tabelline</title>
+  <meta name="description" content="Una guida interattiva per muovere i primi passi su Brackets.">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@1&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div style="text-align: center">
+    <p id="bGioca" onclick="show(0)" style="display: none">Gioca</p>
+
+  </div>
+  <div id="gioca">
+    <center>
+      <h1 id="titolo" onclick="changeOwner()">LE TABELLINE</h1>
+      <span id="smile"></span>
+      <h2 id="game" class="wrong"><span id=operazione>3 x 2</span> = <span id="risultato">?</span> <span
+          id="hint"></span></h2>
+      <table width="100%">
+        <tr>
+          <td height=60px colspan=3 id="talk" class="talk"
+            style="border-radius: 30px 30px 10px 10px;background-color: #dae6bd;color: black;">TALK</td>
+        </tr>
+        <tr>
+          <td width=30% height=60px onClick="addDigit(1)" class="left">1</td>
+          <td width=30% onClick="addDigit(2)" class="middle">2</td>
+          <td width=30% onClick="addDigit(3)" class="rright">3</td>
+        </tr>
+        <tr>
+          <td height=60px onClick="addDigit(4)" class="left">4</td>
+          <td onClick="addDigit(5)" class="middle">5</td>
+          <td onClick="addDigit(6)" class="rright">6</td>
+        </tr>
+        <tr>
+          <td height=60px onClick="addDigit(7)" class="left">7</td>
+          <td onClick="addDigit(8)" class="middle">8</td>
+          <td onClick="addDigit(9)" class="rright">9</td>
+        </tr>
+        <tr>
+          <td style="background-color:#D0FA64 ;color: black;" height=60px onClick="addDigit('H')" class="last">HELP</td>
+          <td onClick="addDigit(0)" class="last">0</td>
+          <td style="background-color:#F27F30 ;color:black" onClick="addDigit('C')" class="last">CANC</td>
+        </tr>
+        <tr>
+          <td height=60px colspan=3 style="border:1px solid black; border-radius: 10px;" onclick="show(1)"
+            id="bRisultati" onclick="show(1)">Impostazioni
+          </td>
+        </tr>
+
+      </table>
+    </center>
+  </div>
+  <div id="risultati" style="display:none">
+    <center>
+      <h1>RISULTATI</h1>
+      <span id="risTable"></span>
+      <br><a href="#" onclick="return resetTab();"
+        style="text-decoration: none; color:blue; border: 1px solid blueviolet;padding: 5px;border-radius: 10px;">reset</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick="return toggleTriang();"
+        style="text-decoration: none; color: blue; border: 1px solid blueviolet ;padding: 5px;border-radius: 10px;">triang</a>
+    </center>
+  </div>
+
+
+  <script src="/jquery-3.6.0.min.js"></script>
+  <script src="/script 1.js"></script>
+  <script src="/script 2.js"></script>
+  <script src="/script 3.js"></script>
+</body>
+
+</html>

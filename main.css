@@ -1,0 +1,194 @@
+html {
+    background: #e6e9e9;
+    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #222;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h2 {
+    margin-top: 1.3em;
+}
+
+a {
+    color: #0083e8;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+samp {
+    display: none;
+}
+
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
+
+/* new style */
+table {
+    padding: 15px;
+    border-spacing: 10px 15px;
+}
+
+td {
+    border: 1px solid;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: xx-large;
+    color: darkblue;
+
+
+}
+
+body {
+    margin: 0px;
+    border: 0px;
+    padding: 10px;
+    margin: auto;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 0 0 30px 0;
+    font-family: 'Merriweather', serif;
+}
+
+
+h1 {
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    box-shadow: 3px 3px 3px 2px #888888;
+    width: 70%;
+}
+
+#hint {
+    font-size: 15px;
+    color: gray;
+    margin-top: 10px;
+}
+
+img {
+    width: 20px;
+    border: 0px;
+    margin: 0;
+    display: inline;
+    margin-right: 5px
+}
+
+.right {
+    border-color: green !important;
+}
+
+.wrong {
+    border-color: red !important;
+}
+
+#game {
+    border-bottom: 10px solid white;
+}
+
+.talk {
+    background-color: #600;
+    color: white;
+}
+
+.talk-pressed {
+    background-color: #b00;
+}
+
+.rright {
+    border-radius: 10px 10px 30px 10px;
+    border: 1px solid rgb(88, 16, 16);
+    box-shadow: 3px 3px 3px gray;
+
+}
+
+.left {
+    border-radius: 10px 10px 10px 30px;
+    border: 1px solid rgb(88, 16, 16);
+    box-shadow: 3px 3px 3px gray;
+
+}
+
+.middle {
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid rgb(88, 16, 16);
+    box-shadow: 3px 3px 3px gray;
+
+}
+
+.last {
+    border: 1px solid rgb(88, 16, 16);
+    border-radius: 10px;
+    font-family: sans-serif;
+    box-shadow: 3px 3px 2px gray;
+    padding: 10px;
+}
+
+#bRisultati {
+    background-color: lightblue;
+    color: black;
+}
+
+#bGioca {
+    background-color: white;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: x-large;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+    border-radius: 10px;
+background-color: #545454;
+    color: rgb(255, 255, 255);
+
+}
